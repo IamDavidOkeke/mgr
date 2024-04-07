@@ -25,6 +25,16 @@
     justify-content: center;
     min-height: 80vh;
 }
+.rec-4{
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+}
+.col-1{
+    flex: 0 0 10.333333% !important;
+    max-width: 10.333333% !important;
+}
+
 .bg-black{
     background-color: black;
 }
