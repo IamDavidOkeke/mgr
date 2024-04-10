@@ -8,13 +8,13 @@
     border: none;
 }
 .rec-1{
-    background-image: url('./images/adrian-sulyok-sczNLg6rrhQ-unsplash.jpg');
+    background-image: url('./images/karen-uppal-nRraATal7gg-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
 }
-.rec-2{
+.dark-shade{
     background-color: rgba(14, 14, 14, 0.6);
     height: 100%;
     width: 100%;
@@ -49,6 +49,10 @@
 }
 .f-img{
     width: 100%;
+    height: auto;
+}
+.q-img{
+    width: 25%;
     height: auto;
 }
 .grid{
@@ -92,6 +96,19 @@
 .logo-border{
     border: 2px solid #007bff;
     border-radius: 50%;
+}
+.rec-7{
+    background-image: url('./images/james-baltz-yihX4Rq-JsI-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mw-540{
+    max-width: 540px;
+}
+.py-10{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 @media only screen and (max-width: 700px) {
     .two-col-wrap{
