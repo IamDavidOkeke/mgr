@@ -47,7 +47,7 @@
               Lifestyle solutions to <br />fuel your business.
             </h1>
             <h3>Insights to make it succeed.</h3>
-            <button class="btn btn-primary p-color mt-2">
+            <button class="btn btn-primary p-color mt-2 quoteBtn" >
               <h5 class="display-5">Get a quote</h5>
             </button>
           </div>
@@ -82,7 +82,7 @@
             <p>
                 We provide fast, affordable dispatch delivery services for small businesses. with schedule pickup, pilot tracking and multi-point deliveries.
             </p>
-            <button class="btn btn-lg p-bg white round">get quote</button>
+            <button class="btn btn-lg p-bg white round quoteBtn">get quote</button>
           </section>
           <section> 
               <img class="mx-auto 
@@ -100,7 +100,7 @@
             <p>
               We offer premium car and truck rental at affordable rates. From high-end convertibles to premium SUVs. Stress-free, trustworthy and no hidden costs.
             </p>
-            <button class="btn btn-lg p-bg white round">get quote</button>
+            <button class="btn btn-lg p-bg white round quoteBtn">get quote</button>
           </section>
           
         </div>
@@ -112,7 +112,7 @@
             <p>
                 We help you earn passive income with us as partners by renting out your trucks, cars etc. We partner with ride-hailing companies like Uber and Lyft, providing cars for transportation. Maintenance and Insurance of your car is on us.
             </p>
-            <button class="btn btn-lg p-bg white round">get quote</button>
+            <button class="btn btn-lg p-bg white round quoteBtn">get quote</button>
           </section>
           <section> 
               <img class="mx-auto 
@@ -138,7 +138,7 @@
                   <input type="text" class="form-control py-4" id="emailAddress">
                 </div>
                 <p class="text-center text-muted mt-5"> By clicking on continue, you accept our <a class="text-primary">terms of service</a> and <a class="text-primary">Privacy Policy</a></p>
-                <button type="button" class="btn btn-primary btn-lg">Continue</button>
+                <button type="button" class="btn btn-primary btn-lg submit">Continue</button>
               </form>
         </div>
     </section>
@@ -182,8 +182,17 @@
             const navbtn = document.getElementById('navbtn')
             const navbtn_x = document.getElementById('navbtn-x')
             const mobile_header = document.querySelector('.mobile-header')
+            const quoteBtn = Array.from(document.querySelectorAll('.quoteBtn'))
+            const cta = document.querySelector('#work')
+            const submit = document.querySelector('.submit')
+            submit.addEventListener('click', ()=>{
+              window.alert('thank you, we will get back to you shortly')
+
+            })
            // const canvas = document.querySelector('.canvas')
-            
+            quoteBtn.map(q=>q.addEventListener('click', ()=>{
+              cta.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+            }))
             let myFont = new FontFace('myFont', "url('./Satoshi-Medium.woff')")
             myFont.load().then((font)=>{
               document.fonts.add(font)
